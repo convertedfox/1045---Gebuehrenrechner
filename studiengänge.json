@@ -1,0 +1,40 @@
+{
+    "studiengaenge": [
+        {
+        "name": "Informatik",
+        "semester": 4,
+        "ects": 90,
+        "abschluss": "Bachelor of Science"
+        },
+        {
+        "name": "Wirtschaftsinformatik",
+        "semester": 4,
+        "ects": 90,
+        "abschluss": "Bachelor of Science"
+        },
+        {
+        "name": "Mathematik",
+        "semester": 4,
+        "ects": 90,
+        "abschluss": "Master of Science"
+        },
+        {
+        "name": "Marketing",
+        "semester": 4,
+        "ects": 90,
+        "abschluss": "Master of Science"
+        },
+        {
+        "name": "Elektrotechnik",
+        "semester": 4,
+        "ects": 90,
+        "abschluss": "Master of Science"
+        },
+        {
+        "name": "Maschinenbau",
+        "semester": 4,
+        "ects": 90,
+        "abschluss": "Master of Science"
+        }
+    ]
+}
