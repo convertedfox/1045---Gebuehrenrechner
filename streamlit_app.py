@@ -10,7 +10,7 @@ studiengang_namen = [studiengang["name"] for studiengang in studiengaenge["studi
 
 # Title
 st.title('Gebührenkostenrechner 💰')
-st.write('Prototyp, ist in Entwicklung')
+st.write('Prototyp, ist in Entwicklung...')
 
 # In welchem Studiengang wird absolviert?
 st.write('## Erbrachte Leistungen')
