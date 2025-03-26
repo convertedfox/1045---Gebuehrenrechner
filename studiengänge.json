@@ -1,40 +1,254 @@
-{
-    "studiengaenge": [
-        {
-        "name": "Informatik",
-        "semester": 4,
-        "ects": 90,
-        "abschluss": "Bachelor of Science"
-        },
-        {
-        "name": "Wirtschaftsinformatik",
-        "semester": 4,
-        "ects": 90,
-        "abschluss": "Bachelor of Science"
-        },
-        {
-        "name": "Mathematik",
-        "semester": 4,
-        "ects": 90,
-        "abschluss": "Master of Science"
-        },
-        {
-        "name": "Marketing",
-        "semester": 4,
-        "ects": 90,
-        "abschluss": "Master of Science"
-        },
-        {
-        "name": "Elektrotechnik",
-        "semester": 4,
-        "ects": 90,
-        "abschluss": "Master of Science"
-        },
-        {
-        "name": "Maschinenbau",
-        "semester": 4,
-        "ects": 90,
-        "abschluss": "Master of Science"
-        }
-    ]
-}
+[
+  {
+    "Studiengang": "Intensive Care",
+    "Fachbereich": "Gesundheit",
+    "Gebühr ab 20271001": 1925.0,
+    "Modulgebühren incl. Prüfungsgebühr": 550.0,
+    "Grundlagenmodule": 250.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Advanced Practice in Healthcare",
+    "Fachbereich": "Gesundheit",
+    "Gebühr ab 20271001": 1925.0,
+    "Modulgebühren incl. Prüfungsgebühr": 550.0,
+    "Grundlagenmodule": 250.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Transkulturelle Traumapädagogik",
+    "Fachbereich": "Sozialwesen",
+    "Gebühr ab 20271001": 1925.0,
+    "Modulgebühren incl. Prüfungsgebühr": 550.0,
+    "Grundlagenmodule": 250.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Digitalisierung in der Sozialen Arbeit",
+    "Fachbereich": "Sozialwesen",
+    "Gebühr ab 20271001": 1925.0,
+    "Modulgebühren incl. Prüfungsgebühr": 550.0,
+    "Grundlagenmodule": 250.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Governance Sozialer Arbeit",
+    "Fachbereich": "Sozialwesen",
+    "Gebühr ab 20271001": 1925.0,
+    "Modulgebühren incl. Prüfungsgebühr": 550.0,
+    "Grundlagenmodule": 250.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Soziale Arbeit in der Migrationsgesellschaft",
+    "Fachbereich": "Sozialwesen",
+    "Gebühr ab 20271001": 1925.0,
+    "Modulgebühren incl. Prüfungsgebühr": 550.0,
+    "Grundlagenmodule": 250.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Planung und Koordination in der Sozialen Arbeit",
+    "Fachbereich": "Sozialwesen",
+    "Gebühr ab 20271001": 1925.0,
+    "Modulgebühren incl. Prüfungsgebühr": 550.0,
+    "Grundlagenmodule": 250.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Bauingenieurwesen",
+    "Fachbereich": "Technik",
+    "Gebühr ab 20271001": 5175.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Data Science and Artificial Intelligence",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Elektrotechnik und Informationstechnik",
+    "Fachbereich": "Technik",
+    "Gebühr ab 20271001": 5175.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Executive Engineering",
+    "Fachbereich": "Technik",
+    "Gebühr ab 20271001": 8000.0,
+    "Modulgebühren incl. Prüfungsgebühr": 2340.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Informatik",
+    "Fachbereich": "Technik",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Integrated Engineering",
+    "Fachbereich": "Technik",
+    "Gebühr ab 20271001": 5175.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Maschinenbau",
+    "Fachbereich": "Technik",
+    "Gebühr ab 20271001": 5175.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Wirtschaftsinformatik",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Wirtschaftsingenieurwesen",
+    "Fachbereich": "Technik",
+    "Gebühr ab 20271001": 5175.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Master of Business Administration (MBA)",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Accounting, Controlling, Taxation",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Digital Business Management",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Entrepreneurship",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Finance",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "General Business Management",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Marketing",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Media and Data-driven Business",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Personalmanagement und Wirtschaftspsychologie",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Rechnungswesen Steuern Wirtschaftsrecht",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 5300.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1700.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Sales and Negotiation",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  },
+  {
+    "Studiengang": "Supply Chain Management, Logistics, Production",
+    "Fachbereich": "Wirtschaft",
+    "Gebühr ab 20271001": 4750.0,
+    "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+    "Grundlagenmodule": 670.0,
+    "Gebühr ab dem 5. Fachsemester": 480,
+    "Anmeldegebühr": 300
+  }
+]
