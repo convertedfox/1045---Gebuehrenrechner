@@ -61,7 +61,7 @@ else:
   ECTS_vorher_cas = 0
 
 # Welche Kosten sind damit verbunden?
-st.write('## Kosten')
+st.write('## Kosten 💲')
 st.write("Hier kommt dann eine Tabelle mit den Semestern und damit verbundenen Kosten hin...")
 gesamtzeit = anzahl_semester_extern + anzahl_semester_vorher_cas + etcsumrechner(ECTS_vorher_cas) + anzahl_semester_cas 
 st.markdown(f'##### Gesamtzeit: {gesamtzeit} Semester')
