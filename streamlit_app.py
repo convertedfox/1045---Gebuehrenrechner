@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import os
 from ects_umrechner import etcsumrechner
+from kosten import kosten_kalkulieren
 
 # Load data
 @st.cache_data
@@ -62,10 +63,16 @@ else:
 
 # Welche Kosten sind damit verbunden?
 st.write('## Kosten 💲')
-st.write("Hier kommt dann eine Tabelle mit den Semestern und damit verbundenen Kosten hin...")
+st.write('Aktuell werden nur die reinen "Studien-Gebühren" berechnet, keine weiteren Kosten (wie Modulgebühren, etc.)')
+st.write('Das kommt dann demnächst... Und wird hier schick tabelliert.')
 gesamtzeit = anzahl_semester_extern + anzahl_semester_vorher_cas + etcsumrechner(ECTS_vorher_cas) + anzahl_semester_cas 
 st.markdown(f'##### Gesamtzeit: {gesamtzeit} Semester')
+
+gesamtkosten = 0
+
 for semester in range(1, gesamtzeit+1):
   st.markdown(f'**Semester {semester}**')
-  st.write('Hier kommen dann die spezifischen Kosten für das Semester hin...')
-st.markdown(f'##### Gesamtkosten: hier stehen €€€€...')
+  kosten_für_semester = kosten_kalkulieren(semester, next((eintrag for eintrag in load_data() if eintrag["Studiengang"] == abs_studiengang), None), anzahl_semester_extern, etcsumrechner(ECTS_vorher_cas), anzahl_semester_vorher_cas)
+  st.write(f'Kosten: {kosten_für_semester} €')
+  gesamtkosten += kosten_für_semester
+st.markdown(f'##### Gesamtkosten: {gesamtkosten} €')
