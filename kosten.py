@@ -17,3 +17,17 @@ def kosten_kalkulieren(semester, studiengang, anzahl_semester_extern, ects_semes
         basiskosten = studiengang["Gebühr ab 20271001"]
     
     return basiskosten
+
+if __name__ == '__main__':
+    # Beispielaufruf
+    studiengang = {
+        "Studiengang": "Bachelor in Informatik",
+        "Gebühr ab 20271001": 5000.0
+    }
+    semester = 3
+    anzahl_semester_extern = 1
+    ects_semester = 1
+    anzahl_semester_vorher_cas = 0
+
+    kosten = kosten_kalkulieren(semester, studiengang, anzahl_semester_extern, ects_semester, anzahl_semester_vorher_cas)
+    print(f"Kosten für das Semester: {kosten} €")
