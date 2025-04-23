@@ -8,15 +8,18 @@ def kosten_kalkulieren(semester, studiengang, anzahl_semester_extern, ects_semes
     ects_semester: Semester, die aufgrund von ects angerechnet werden können
     anzahl_semester_vorher_cas: Anzahl der Semester, die am CAS in einem anderen Studiengang angerechnet werden können
 
-    return: float: Kosten für das Semester
+    return: float, float: Kosten für das Semester, langzeitkosten
     """
 
     if semester < (anzahl_semester_extern +  ects_semester + anzahl_semester_vorher_cas):
-        return 0.0
+        return 0.0, 0.0
     else:
         basiskosten = studiengang["Gebühr ab 20271001"]
-    
-    return basiskosten
+        if semester > 4:
+            langzeitkosten = studiengang["Gebühr ab dem 5. Fachsemester"]
+        else:
+            langzeitkosten = 0.0
+    return basiskosten, langzeitkosten
 
 if __name__ == '__main__':
     # Beispielaufruf

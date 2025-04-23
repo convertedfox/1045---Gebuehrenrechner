@@ -68,11 +68,17 @@ st.write('Das kommt dann demnächst... Und wird hier schick tabelliert.')
 gesamtzeit = anzahl_semester_extern + anzahl_semester_vorher_cas + etcsumrechner(ECTS_vorher_cas) + anzahl_semester_cas 
 st.markdown(f'##### Gesamtzeit: {gesamtzeit} Semester')
 
-gesamtkosten = 0
+### Anmeldegebühr
+ANMELDEGEBÜHR = next((eintrag for eintrag in load_data() if eintrag["Studiengang"] == abs_studiengang), None)["Anmeldegebühr"]
+st.markdown(f'Einmalige Anmeldegebühr: {ANMELDEGEBÜHR:,.2f} €')
+
+GESAMTKOSTEN = 0 + ANMELDEGEBÜHR
 
 for semester in range(1, gesamtzeit+1):
   st.markdown(f'**Semester {semester}**')
-  kosten_für_semester = kosten_kalkulieren(semester, next((eintrag for eintrag in load_data() if eintrag["Studiengang"] == abs_studiengang), None), anzahl_semester_extern, etcsumrechner(ECTS_vorher_cas), anzahl_semester_vorher_cas)
-  st.write(f'Kosten: {kosten_für_semester} €')
-  gesamtkosten += kosten_für_semester
-st.markdown(f'##### Gesamtkosten: {gesamtkosten} €')
+  basiskosten_semester, langzeitkosten_semester = kosten_kalkulieren(semester, next((eintrag for eintrag in load_data() if eintrag["Studiengang"] == abs_studiengang), None), anzahl_semester_extern, etcsumrechner(ECTS_vorher_cas), anzahl_semester_vorher_cas)
+  st.write(f'Kosten: {basiskosten_semester:,.2f} €')
+  if langzeitkosten_semester > 0:
+    st.write(f'Langzeitkosten: {langzeitkosten_semester:,.2f} €')
+  GESAMTKOSTEN += basiskosten_semester + langzeitkosten_semester
+st.markdown(f'##### Gesamtkosten: {GESAMTKOSTEN:,.2f} €')
