@@ -252,5 +252,767 @@
       "Langzeitgebühr": 480,
       "Studiengebühren": 4750.0
     }
+  ],
+  "Gebührensatzung ab 01.04.2027": [
+    {
+      "Studiengang": "Intensive Care",
+      "Fachbereich": "Gesundheit",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1925
+    },
+    {
+      "Studiengang": "Advanced Practice in Healthcare",
+      "Fachbereich": "Gesundheit",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1925
+    },
+    {
+      "Studiengang": "Transkulturelle Traumapädagogik",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1925
+    },
+    {
+      "Studiengang": "Digitalisierung in der Sozialen Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1925
+    },
+    {
+      "Studiengang": "Governance Sozialer Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1925
+    },
+    {
+      "Studiengang": "Soziale Arbeit in der Migrationsgesellschaft",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1925
+    },
+    {
+      "Studiengang": "Planung und Koordination in der Sozialen Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1925
+    },
+    {
+      "Studiengang": "Bauingenieurwesen",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Data Science and Artificial Intelligence",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4350
+    },
+    {
+      "Studiengang": "Elektrotechnik und Informationstechnik",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Executive Engineering",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 2340.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 8000.0
+    },
+    {
+      "Studiengang": "Informatik",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4350
+    },
+    {
+      "Studiengang": "Integrated Engineering",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5250
+    },
+    {
+      "Studiengang": "Maschinenbau",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Wirtschaftsingenieurwesen",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Wirtschaftsinformatik",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4350
+    },
+    {
+      "Studiengang": "Master of Business Administration (MBA)",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Accounting, Controlling, Taxation",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Digital Business Management",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Entrepreneurship",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Finance",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "General Business Management",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Marketing",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Media and Data-driven Business",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Personalmanagement und Wirtschaftspsychologie",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Rechnungswesen, Steuern, Wirtschaftsrecht",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1700.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4900
+    },
+    {
+      "Studiengang": "Sales and Negotiation",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Supply Chain Management, Logistics, Production",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    }
+  ],
+  "Gebührensatzung ab 01.04.2026": [
+    {
+      "Studiengang": "Intensive Care",
+      "Fachbereich": "Gesundheit",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1800
+    },
+    {
+      "Studiengang": "Advanced Practice in Healthcare",
+      "Fachbereich": "Gesundheit",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1800
+    },
+    {
+      "Studiengang": "Transkulturelle Traumapädagogik",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1800
+    },
+    {
+      "Studiengang": "Digitalisierung in der Sozialen Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1800
+    },
+    {
+      "Studiengang": "Governance Sozialer Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1800
+    },
+    {
+      "Studiengang": "Soziale Arbeit in der Migrationsgesellschaft",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1800
+    },
+    {
+      "Studiengang": "Planung und Koordination in der Sozialen Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1800
+    },
+    {
+      "Studiengang": "Bauingenieurwesen",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5175
+    },
+    {
+      "Studiengang": "Elektrotechnik und Informationstechnik",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5175
+    },
+    {
+      "Studiengang": "Executive Engineering",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 2340.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 8000.0
+    },
+    {
+      "Studiengang": "Informatik",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Integrated Engineering",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5175
+    },
+    {
+      "Studiengang": "Maschinenbau",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5175
+    },
+    {
+      "Studiengang": "Wirtschaftsingenieurwesen",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5175
+    },
+    {
+      "Studiengang": "Wirtschaftsinformatik",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Master of Business Administration (MBA)",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Accounting, Controlling, Taxation",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Digital Business Management",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Data Science and Artificial Intelligence",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Entrepreneurship",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Finance",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "General Business Management",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Marketing",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Media and Data-driven Business",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Personalmanagement und Wirtschaftspsychologie",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Rechnungswesen, Steuern, Wirtschaftsrecht",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1700.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5300
+    },
+    {
+      "Studiengang": "Sales and Negotiation",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    },
+    {
+      "Studiengang": "Supply Chain Management, Logistics, Production",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4750
+    }
+  ],
+  "Gebührensatzung ab 01.10.2022": [
+    {
+      "Studiengang": "Intensive Care",
+      "Fachbereich": "Gesundheit",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1625
+    },
+    {
+      "Studiengang": "Advanced Practice in Healthcare",
+      "Fachbereich": "Gesundheit",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1625
+    },
+    {
+      "Studiengang": "Transkulturelle Traumapädagogik",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1625
+    },
+    {
+      "Studiengang": "Digitalisierung in der Sozialen Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1625
+    },
+    {
+      "Studiengang": "Governance Sozialer Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1625
+    },
+    {
+      "Studiengang": "Soziale Arbeit in der Migrationsgesellschaft",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1625
+    },
+    {
+      "Studiengang": "Planung und Koordination in der Sozialen Arbeit",
+      "Fachbereich": "Sozialwesen",
+      "Modulgebühren incl. Prüfungsgebühr": 550.0,
+      "Grundlagenmodule": 250.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 1625
+    },
+    {
+      "Studiengang": "Bauingenieurwesen",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Data Science and Artificial Intelligence",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4350
+    },
+    {
+      "Studiengang": "Elektrotechnik und Informationstechnik",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Executive Engineering",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 2340.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 8000.0
+    },
+    {
+      "Studiengang": "Informatik",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4350
+    },
+    {
+      "Studiengang": "Integrated Engineering",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5250
+    },
+    {
+      "Studiengang": "Maschinenbau",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Wirtschaftsingenieurwesen",
+      "Fachbereich": "Technik",
+      "Modulgebühren incl. Prüfungsgebühr": 1740.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 5000
+    },
+    {
+      "Studiengang": "Wirtschaftsinformatik",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4350
+    },
+    {
+      "Studiengang": "Master of Business Administration (MBA)",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Accounting, Controlling, Taxation",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Digital Business Management",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Entrepreneurship",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Finance",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "General Business Management",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Marketing",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Media and Data-driven Business",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Personalmanagement und Wirtschaftspsychologie",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Rechnungswesen, Steuern, Wirtschaftsrecht",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1700.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4900
+    },
+    {
+      "Studiengang": "Sales and Negotiation",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    },
+    {
+      "Studiengang": "Supply Chain Management, Logistics, Production",
+      "Fachbereich": "Wirtschaft",
+      "Modulgebühren incl. Prüfungsgebühr": 1570.0,
+      "Grundlagenmodule": 670.0,
+      "Anmeldegebühr": 400,
+      "Langzeitgebühr": 480,
+      "Studiengebühren": 4225
+    }
   ]
 }

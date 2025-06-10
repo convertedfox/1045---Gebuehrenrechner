@@ -84,8 +84,9 @@ st.markdown(f'##### Gesamtzeit: {gesamtzeit} Semester')
 studiengang_data = next((eintrag for eintrag in data[gebührensatzung] if eintrag["Studiengang"] == abs_studiengang), None)
 ANMELDEGEBÜHR = studiengang_data["Anmeldegebühr"]
 st.markdown(f'Einmalige Anmeldegebühr: {ANMELDEGEBÜHR:,.2f} €')
+st.markdown(f'Studentische Beiträge (60 € pro Semester): {anzahl_semester_cas*60:,.2f} €')
 
-GESAMTKOSTEN = 0 + ANMELDEGEBÜHR
+GESAMTKOSTEN = 0 + ANMELDEGEBÜHR + anzahl_semester_cas*60
 
 for semester in range(1, gesamtzeit+1):
     st.markdown(f'**Semester {semester}**')
