@@ -14,9 +14,9 @@ def kosten_kalkulieren(semester, studiengang, anzahl_semester_extern, ects_semes
     if semester < (anzahl_semester_extern +  ects_semester + anzahl_semester_vorher_cas):
         return 0.0, 0.0
     else:
-        basiskosten = studiengang["Gebühr ab 20271001"]
+        basiskosten = studiengang["Studiengebühren"]
         if semester > 4:
-            langzeitkosten = studiengang["Gebühr ab dem 5. Fachsemester"]
+            langzeitkosten = studiengang["Langzeitgebühr"]
         else:
             langzeitkosten = 0.0
     return basiskosten, langzeitkosten
