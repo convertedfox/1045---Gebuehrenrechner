@@ -1,5 +1,6 @@
 def ectsumrechner(ects):
     """
+    Ist obsolet aktuell
     Gibt Anzahl der Semester
     zurück, die durch die Anzahl
     der ECTS angerechnet werden können.

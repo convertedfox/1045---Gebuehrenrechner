@@ -1,36 +1,41 @@
-def kosten_kalkulieren(semester, studiengang, anzahl_semester_extern, ects_semester, anzahl_semester_vorher_cas,) -> float:
+def nackte_semesterkosten(semester, studiengang) -> float:
     """
-    Berechnet die Kosten für ein einzelnes Semester.
+    Berechnet die Kosten für ein einzelnes Semester ohne sonstige Parameter, nur die Langzeitgebühren werden noch ermittelt.
 
     semester: aktuelles Semester, das berechnet werden soll
     studiengang: Studiengangsdaten, für den die Kosten berechnet werden
-    anzahl_semester_extern: Anzahl der externen Semester, die angerechnet werden können
-    ects_semester: Semester, die aufgrund von ects angerechnet werden können
-    anzahl_semester_vorher_cas: Anzahl der Semester, die am CAS in einem anderen Studiengang angerechnet werden können
-
     return: float, float: Kosten für das Semester, langzeitkosten
     """
 
-    if semester < (anzahl_semester_extern +  ects_semester + anzahl_semester_vorher_cas):
-        return 0.0, 0.0
-    else:
-        basiskosten = studiengang["Studiengebühren"]
-        if semester > 4:
-            langzeitkosten = studiengang["Langzeitgebühr"]
-        else:
-            langzeitkosten = 0.0
-    return basiskosten, langzeitkosten
+    basiskosten_für_semester = studiengang["Studiengebühren"]
 
-if __name__ == '__main__':
-    # Beispielaufruf
+    if semester < (5):
+        return basiskosten_für_semester, 0.0
+    else:
+        langzeitkosten = studiengang["Langzeitgebühr"]
+        return basiskosten_für_semester, langzeitkosten
+
+
+if __name__ == "__main__":
+    # Beispielaufruf 1
     studiengang = {
         "Studiengang": "Bachelor in Informatik",
-        "Gebühr ab 20271001": 5000.0
+        "Studiengebühren": 5000.0,
+        "Langzeitgebühr": 480.0,
     }
     semester = 3
-    anzahl_semester_extern = 1
-    ects_semester = 1
-    anzahl_semester_vorher_cas = 0
 
-    kosten = kosten_kalkulieren(semester, studiengang, anzahl_semester_extern, ects_semester, anzahl_semester_vorher_cas)
+    kosten = nackte_semesterkosten(semester, studiengang)
+    print(f"Kosten für das Semester: {kosten} €")
+
+    # Beispielaufruf 2
+    studiengang = {
+        "Studiengang": "Bachelor in Informatik",
+        "Studiengebühren": 5000.0,
+        "Langzeitgebühr": 480.0,
+    }
+    semester = 5
+
+    kosten = nackte_semesterkosten(semester, studiengang)
+
     print(f"Kosten für das Semester: {kosten} €")
