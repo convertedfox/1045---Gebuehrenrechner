@@ -117,7 +117,7 @@ elif v2 == "Ja, Zertifikate":
         value=17,
     )
     st.write(
-        f"Anzahl Semester, die durch {ECTS_vorher_cas} ECTS angerechnet werden können: {etcsumrechner(ECTS_vorher_cas)}"
+        f"Anzahl Semester, die durch {ECTS_vorher_cas} ECTS angerechnet werden können: {ectsumrechner(ECTS_vorher_cas)}"
     )
     anzahl_semester_vorher_cas = 0
 else:
