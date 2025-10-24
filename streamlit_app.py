@@ -142,24 +142,22 @@ st.write("## Kosten 💲")
 st.write(
     'Aktuell werden nur die reinen "Studien-Gebühren" berechnet, keine weiteren Kosten (wie Modulgebühren, etc.)'
 )
-st.write("Das kommt dann demnächst... Und wird hier schick tabelliert.")
 gesamtzeit = anzahl_semester_cas
 
 st.markdown(f"##### Gesamtzeit: {gesamtzeit} Semester")
 
-### Anmeldegebühr
-ANMELDEGEBÜHR = studiengang_data["Anmeldegebühr"]
-st.markdown(f"Einmalige Anmeldegebühr: {ANMELDEGEBÜHR:,.2f} €")
-st.markdown(
-    f"Studentische Beiträge (60 € pro Semester): {anzahl_semester_cas * 60:,.2f} €"
-)
-
-GESAMTKOSTEN = 0 + ANMELDEGEBÜHR + anzahl_semester_cas * 60
+# Anmeldegebühr
+anmeldegebühr = studiengang_data["Anmeldegebühr"]
+GESAMTKOSTEN = 0 + anmeldegebühr + anzahl_semester_cas * 60
 # Warum die 60? Weil studentische Beiträge 60 euro pro semester sind
 
-st.write(geschätzte_gesamtgebühr)
+# st.write(geschätzte_gesamtgebühr)
+
+# Semestertabelle erzeugen
+row1 = st.columns(anzahl_semester_cas)
 for semester in range(1, gesamtzeit + 1):
-    st.markdown(f"**Semester {semester}**")
+    semestercontainer = st.container(border=True)
+    semestercontainer.markdown(f"**Semester {semester}**")
     basiskosten_semester, langzeitkosten_semester = nackte_semesterkosten(
         semester,
         studiengang_data,
@@ -167,26 +165,35 @@ for semester in range(1, gesamtzeit + 1):
     if flag_rabatt:
         if geschätzte_gesamtgebühr > 0:
             if geschätzte_gesamtgebühr > basiskosten_semester:
-                st.write(f"Semestergebühren: {basiskosten_semester:,.2f} €")
+                semestercontainer.write(
+                    f"Semestergebühren: {basiskosten_semester:,.2f} €"
+                )
                 geschätzte_gesamtgebühr -= basiskosten_semester
-                st.write(geschätzte_gesamtgebühr)
+                semestercontainer.write(geschätzte_gesamtgebühr)
             else:
-                st.write(
+                semestercontainer.write(
                     f"rabattierte Semestergebühren: {geschätzte_gesamtgebühr:,.2f} € (durch Anrechnungen teilweise gedeckt)"
                 )
                 basiskosten_semester = geschätzte_gesamtgebühr
                 geschätzte_gesamtgebühr = 0
-                st.write(geschätzte_gesamtgebühr)
+                semestercontainer.write(geschätzte_gesamtgebühr)
         else:
-            st.write(
+            semestercontainer.write(
                 "rabattierte Semestergebühren: 0.00 € (durch Anrechnungen vollständig gedeckt)"
             )
             basiskosten_semester = 0.0
-            st.write(geschätzte_gesamtgebühr)
+            semestercontainer.write(geschätzte_gesamtgebühr)
     else:
-        st.write(f"Semestergebühren: {basiskosten_semester:,.2f} €")
+        semestercontainer.write(f"Semestergebühren: {basiskosten_semester:,.2f} €")
     if langzeitkosten_semester > 0:
         st.write(f"Langzeitkosten: {langzeitkosten_semester:,.2f} €")
     GESAMTKOSTEN += basiskosten_semester + langzeitkosten_semester
 
-st.markdown(f"##### Gesamtkosten: {GESAMTKOSTEN:,.2f} €")
+container_gesamtkosten = st.container(border=True)
+
+container_gesamtkosten.write(f"➕ Einmalige Anmeldegebühr: {anmeldegebühr:,.2f} €")
+container_gesamtkosten.write(
+    f"➕ Studentische Beiträge (60 € pro Semester): {anzahl_semester_cas * 60:,.2f} €"
+)
+container_gesamtkosten.markdown("---")
+container_gesamtkosten.markdown(f"##### 🟰 Gesamtkosten: {GESAMTKOSTEN:,.2f} €")
