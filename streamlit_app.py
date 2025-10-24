@@ -34,7 +34,7 @@ def load_gebührensatzung(data):
 # Daten laden
 data = load_data()
 flag_rabatt = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
-um_ects_reduzierte_gebühren = 0
+
 
 # Title
 st.title("Gebührenkostenrechner 💰")
@@ -47,10 +47,8 @@ gebührensatzung = st.selectbox(
     index=2,
     disabled=True,
 )
-
 # In welchem Studiengang wird absolviert?
-st.write("## Erbrachte Leistungen")
-st.write("### In welchem Studiengang wird absolviert? 👨🏻‍🎓")
+st.write("## In welchem Studiengang wird absolviert? 👨🏻‍🎓")
 abs_studiengang = st.selectbox(
     "Worin will man absolvieren?", load_studiengänge(data, gebührensatzung), index=0
 )
@@ -67,6 +65,8 @@ studiengang_data = next(
 if studiengang_data is None:
     st.error("Für den ausgewählten Studiengang wurden keine Stammdaten gefunden.")
     st.stop()
+
+geschätzte_gesamtgebühr = studiengang_data.get("Studiengebühren") * 4  # Initialwert
 
 st.write("Diese Daten liegen vor - nur zur Demo:")
 st.write(studiengang_data)
@@ -102,12 +102,10 @@ else:
             max_value=90,
             step=1,
         )
-        um_ects_reduzierte_gebühren = studiengang_data.get("DB3") * 4 + (
+        geschätzte_gesamtgebühr = studiengang_data.get("DB3") * 4 + (
             (studiengang_data.get("DB1") + studiengang_data.get("DB2")) * 4 / 90
         ) * (90 - ects_extern)
-        rabatt = (
-            studiengang_data.get("Studiengebühren") * 4 - um_ects_reduzierte_gebühren
-        )
+        rabatt = studiengang_data.get("Studiengebühren") * 4 - geschätzte_gesamtgebühr
         if ects_extern > 0:
             st.write(
                 f"Für die externen ECTS wird die Gebühr um {rabatt:,.2f} € gesenkt."
@@ -132,6 +130,12 @@ if v2 == "Ja":
     vorher_bezahlte_gebühren = st.number_input(
         "Gebühren für anrechenbare Leistungen",
     )
+    if vorher_bezahlte_gebühren > 0:
+        st.write(
+            f"Die bisher bezahlten Gebühren von {vorher_bezahlte_gebühren:,.2f} € werden angerechnet."
+        )
+        geschätzte_gesamtgebühr -= vorher_bezahlte_gebühren
+        flag_rabatt = True
 
 # Welche Kosten sind damit verbunden?
 st.write("## Kosten 💲")
@@ -150,10 +154,10 @@ st.markdown(
     f"Studentische Beiträge (60 € pro Semester): {anzahl_semester_cas * 60:,.2f} €"
 )
 
-GESAMTKOSTEN = (
-    0 + ANMELDEGEBÜHR + anzahl_semester_cas * 60
-)  # Warum die 60? Weil studentische Beiträge 60 euro pro semester sind
-st.write(um_ects_reduzierte_gebühren)
+GESAMTKOSTEN = 0 + ANMELDEGEBÜHR + anzahl_semester_cas * 60
+# Warum die 60? Weil studentische Beiträge 60 euro pro semester sind
+
+st.write(geschätzte_gesamtgebühr)
 for semester in range(1, gesamtzeit + 1):
     st.markdown(f"**Semester {semester}**")
     basiskosten_semester, langzeitkosten_semester = nackte_semesterkosten(
@@ -161,20 +165,24 @@ for semester in range(1, gesamtzeit + 1):
         studiengang_data,
     )
     if flag_rabatt:
-        if um_ects_reduzierte_gebühren > 0:
-            if um_ects_reduzierte_gebühren > basiskosten_semester:
+        if geschätzte_gesamtgebühr > 0:
+            if geschätzte_gesamtgebühr > basiskosten_semester:
                 st.write(f"Semestergebühren: {basiskosten_semester:,.2f} €")
-                um_ects_reduzierte_gebühren -= basiskosten_semester
-                st.write(um_ects_reduzierte_gebühren)
+                geschätzte_gesamtgebühr -= basiskosten_semester
+                st.write(geschätzte_gesamtgebühr)
             else:
-                st.write(f"Semestergebühren: {um_ects_reduzierte_gebühren:,.2f} €")
-                basiskosten_semester = um_ects_reduzierte_gebühren
-                um_ects_reduzierte_gebühren = 0
-                st.write(um_ects_reduzierte_gebühren)
+                st.write(
+                    f"rabattierte Semestergebühren: {geschätzte_gesamtgebühr:,.2f} € (durch Anrechnungen teilweise gedeckt)"
+                )
+                basiskosten_semester = geschätzte_gesamtgebühr
+                geschätzte_gesamtgebühr = 0
+                st.write(geschätzte_gesamtgebühr)
         else:
-            st.write("Semestergebühren: 0.00 € (durch ECTS-Anrechnung gedeckt)")
+            st.write(
+                "rabattierte Semestergebühren: 0.00 € (durch Anrechnungen vollständig gedeckt)"
+            )
             basiskosten_semester = 0.0
-            st.write(um_ects_reduzierte_gebühren)
+            st.write(geschätzte_gesamtgebühr)
     else:
         st.write(f"Semestergebühren: {basiskosten_semester:,.2f} €")
     if langzeitkosten_semester > 0:
