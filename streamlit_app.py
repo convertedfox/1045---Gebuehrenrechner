@@ -133,7 +133,7 @@ st.write("Das kommt dann demnächst... Und wird hier schick tabelliert.")
 gesamtzeit = (
     anzahl_semester_extern
     + anzahl_semester_vorher_cas
-    + etcsumrechner(ECTS_vorher_cas)
+    + ectsumrechner(ECTS_vorher_cas)
     + anzahl_semester_cas
 )
 st.markdown(f"##### Gesamtzeit: {gesamtzeit} Semester")
@@ -161,7 +161,7 @@ for semester in range(1, gesamtzeit + 1):
         semester,
         studiengang_data,
         anzahl_semester_extern,
-        etcsumrechner(ECTS_vorher_cas),
+        ectsumrechner(ECTS_vorher_cas),
         anzahl_semester_vorher_cas,
     )
     st.write(f"Kosten: {basiskosten_semester:,.2f} €")
