@@ -515,7 +515,10 @@
       "Grundlagenmodule": 250.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 1800
+      "Studiengebühren": 1800,
+      "DB1": 2080.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Advanced Practice in Healthcare",
@@ -524,7 +527,10 @@
       "Grundlagenmodule": 250.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 1800
+      "Studiengebühren": 1800,
+      "DB1": 2080.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Transkulturelle Traumapädagogik",
@@ -533,7 +539,10 @@
       "Grundlagenmodule": 250.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 1800
+      "Studiengebühren": 1800,
+      "DB1": 1950.0,
+      "DB2": 1530.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Digitalisierung in der Sozialen Arbeit",
@@ -542,7 +551,10 @@
       "Grundlagenmodule": 250.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 1800
+      "Studiengebühren": 1800,
+      "DB1": 1950.0,
+      "DB2": 1530.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Governance Sozialer Arbeit",
@@ -551,7 +563,10 @@
       "Grundlagenmodule": 250.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 1800
+      "Studiengebühren": 1800,
+      "DB1": 1950.0,
+      "DB2": 1530.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Soziale Arbeit in der Migrationsgesellschaft",
@@ -560,7 +575,10 @@
       "Grundlagenmodule": 250.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 1800
+      "Studiengebühren": 1800,
+      "DB1": 1950.0,
+      "DB2": 1530.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Planung und Koordination in der Sozialen Arbeit",
@@ -569,7 +587,10 @@
       "Grundlagenmodule": 250.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 1800
+      "Studiengebühren": 1800,
+      "DB1": 1950.0,
+      "DB2": 1530.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Bauingenieurwesen",
@@ -578,7 +599,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 5175
+      "Studiengebühren": 5175,
+      "DB1": 1820.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Elektrotechnik und Informationstechnik",
@@ -587,7 +611,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 5175
+      "Studiengebühren": 5175,
+      "DB1": 1820.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Executive Engineering",
@@ -596,7 +623,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 8000.0
+      "Studiengebühren": 8000.0,
+      "DB1": 4530.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Informatik",
@@ -605,7 +635,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1820.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Integrated Engineering",
@@ -614,7 +647,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 5175
+      "Studiengebühren": 5175,
+      "DB1": 1820.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Maschinenbau",
@@ -623,7 +659,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 5175
+      "Studiengebühren": 5175,
+      "DB1": 1820.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Wirtschaftsingenieurwesen",
@@ -632,7 +671,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 5175
+      "Studiengebühren": 5175,
+      "DB1": 1820.0,
+      "DB2": 1170.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Wirtschaftsinformatik",
@@ -641,7 +683,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Master of Business Administration (MBA)",
@@ -650,7 +695,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Accounting, Controlling, Taxation",
@@ -659,7 +707,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Digital Business Management",
@@ -668,7 +719,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Data Science and Artificial Intelligence",
@@ -677,7 +731,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Entrepreneurship",
@@ -686,7 +743,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Finance",
@@ -695,7 +755,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "General Business Management",
@@ -704,7 +767,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Marketing",
@@ -713,7 +779,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Media and Data-driven Business",
@@ -722,7 +791,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Personalmanagement und Wirtschaftspsychologie",
@@ -731,7 +803,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Rechnungswesen, Steuern, Wirtschaftsrecht",
@@ -740,7 +815,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 5300
+      "Studiengebühren": 5300,
+      "DB1": 2275.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Sales and Negotiation",
@@ -749,7 +827,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     },
     {
       "Studiengang": "Supply Chain Management, Logistics, Production",
@@ -758,7 +839,10 @@
       "Grundlagenmodule": 670.0,
       "Anmeldegebühr": 400,
       "Langzeitgebühr": 480,
-      "Studiengebühren": 4750
+      "Studiengebühren": 4750,
+      "DB1": 1680.0,
+      "DB2": 880.0,
+      "DB3": 2240.0
     }
   ],
   "Gebührensatzung ab 01.10.2022": [
