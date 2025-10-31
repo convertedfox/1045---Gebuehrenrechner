@@ -1,5 +1,6 @@
 # Korrigierter Streamlit Code
 from decimal import DefaultContext
+from tkinter import HORIZONTAL
 import streamlit as st
 import json
 from kosten import nackte_semesterkosten
@@ -164,7 +165,7 @@ row1 = st.columns(anzahl_semester_cas)
 semester = 0
 for col in row1:
     semester = semester + 1
-    semestercontainer = col.container(border=True)
+    semestercontainer = col.container(border=True, height=200)
     semestercontainer.markdown(f"**Semester {semester}**")
     basiskosten_semester, langzeitkosten_semester = nackte_semesterkosten(
         semester,
