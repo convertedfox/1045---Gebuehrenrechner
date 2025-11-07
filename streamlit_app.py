@@ -1,6 +1,5 @@
 # Korrigierter Streamlit Code
 from decimal import DefaultContext
-from tkinter import HORIZONTAL
 import streamlit as st
 import json
 from kosten import nackte_semesterkosten
