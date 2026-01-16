@@ -91,7 +91,7 @@ st.write("---")
 st.write("## Anrechnung externer Leistungen 🏫")
 if fachbereich in {"Sozialwesen", "Gesundheit"}:
     st.write(
-        "Bei Studiengängen im Fachbereich Sozialwesen/Gesundheit können keine ECTS angerechnet werden."
+        "Bei Studiengängen im Fachbereich Sozialwesen/Gesundheit können keine Gebühren von externen Leistungen erstattet werden."
     )
 
 else:
