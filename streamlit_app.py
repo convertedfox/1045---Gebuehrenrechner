@@ -180,7 +180,7 @@ for col in row1:
                 # semestercontainer.write(geschätzte_gesamtgebühr)
             else:
                 semestercontainer.write(
-                    f"Semestergebühren: {geschätzte_gesamtgebühr:,.2f} €"
+                    f"Semestergebühren: {geschätzte_gesamtgebühr:,.2f} € "
                     "(durch Anrechnungen (teilweise) gedeckt)"
                 )
                 basiskosten_semester = geschätzte_gesamtgebühr
