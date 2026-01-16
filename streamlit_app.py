@@ -38,7 +38,7 @@ flag_rabatt = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
 
 # Title
 st.title("Gebührenkostenrechner 💰")
-st.write("Prototyp, ist in Entwicklung...")
+# st.write("Prototyp, ist in Entwicklung...")
 
 # Stammdaten
 tab_studiengang, tab_gebühren = st.tabs(["Studiengang", "Gebührensatzung"])
