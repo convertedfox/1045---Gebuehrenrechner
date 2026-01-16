@@ -44,7 +44,7 @@ st.write("Prototyp, ist in Entwicklung...")
 tab_studiengang, tab_gebühren = st.tabs(["Studiengang", "Gebührensatzung"])
 # Gebührensatzung
 with tab_gebühren:
-    st.write("Aktuell werden DBs nur bei Gebührensatzung ab 01.04.2026 unterstützt.")
+    # st.write("Aktuell werden DBs nur bei Gebührensatzung ab 01.04.2026 unterstützt.")
     gebührensatzung = st.selectbox(
         "Welche Gebührensatzung soll verwendet werden?",
         load_gebührensatzung(data),
@@ -74,15 +74,15 @@ with tab_studiengang:
 
     geschätzte_gesamtgebühr = studiengang_data.get("Studiengebühren") * 4  # Initialwert
 
-    st.write("Diese Daten liegen vor - nur zur Demo:")
-    st.write(studiengang_data)
+    # st.write("Diese Daten liegen vor - nur zur Demo:")
+    # st.write(studiengang_data)
 
     fachbereich = studiengang_data.get("Fachbereich") if studiengang_data else None
 
     # Wieviele Semester werden am CAS studiert?
     anzahl_semester_cas = st.number_input(
         f"Anzahl durchlaufener Semester am CAS im Studiengang {abs_studiengang}",
-        min_value=1,
+        min_value=4,
         max_value=10,
         value=4,
     )
@@ -194,15 +194,16 @@ for col in row1:
             semestercontainer.write(geschätzte_gesamtgebühr)
     else:
         semestercontainer.write(f"Semestergebühren: {basiskosten_semester:,.2f} €")
-    if langzeitkosten_semester > 0:
-        st.write(f"Langzeitkosten: {langzeitkosten_semester:,.2f} €")
+
     GESAMTKOSTEN += basiskosten_semester + langzeitkosten_semester
 
 container_gesamtkosten = st.container(border=True)
 
 container_gesamtkosten.write(f"➕ Einmalige Anmeldegebühr: {anmeldegebühr:,.2f} €")
+if langzeitkosten_semester > 0:
+    container_gesamtkosten.write(f"➕ Langzeitkosten: {langzeitkosten_semester:,.2f} €")
 container_gesamtkosten.write(
-    f" Verfasste Studierenschaft- und Studierendenwerksbeiträge (60 € pro Semester): {anzahl_semester_cas * 60:,.2f} €"
+    f"➕ Verfasste Studierenschaft- und Studierendenwerksbeiträge (60 € pro Semester): {anzahl_semester_cas * 60:,.2f} €"
 )
 container_gesamtkosten.markdown("---")
 container_gesamtkosten.markdown(f"##### 🟰 Gesamtkosten: {GESAMTKOSTEN:,.2f} €")
