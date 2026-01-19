@@ -2,6 +2,7 @@
 from decimal import DefaultContext
 import streamlit as st
 import json
+import pandas as pd
 from kosten import nackte_semesterkosten
 
 
@@ -160,12 +161,12 @@ GESAMTKOSTEN = 0 + anmeldegebühr + anzahl_semester_cas * 60
 # st.write(geschätzte_gesamtgebühr)
 
 # Semestertabelle erzeugen
-row1 = st.columns(anzahl_semester_cas)
+semester_rows = []
 semester = 0
-for col in row1:
-    semester = semester + 1
-    semestercontainer = col.container(border=True, height=200)
-    semestercontainer.markdown(f"**Semester {semester}**")
+langzeitkosten_gesamt = 0.0
+for _ in range(anzahl_semester_cas):
+    semester += 1
+    hinweis = ""
     basiskosten_semester, langzeitkosten_semester = nackte_semesterkosten(
         semester,
         studiengang_data,
@@ -173,35 +174,38 @@ for col in row1:
     if flag_rabatt:
         if geschätzte_gesamtgebühr > 0:
             if geschätzte_gesamtgebühr > basiskosten_semester:
-                semestercontainer.write(
-                    f"Semestergebühren:\n{basiskosten_semester:,.2f} €"
-                )
                 geschätzte_gesamtgebühr -= basiskosten_semester
-                # semestercontainer.write(geschätzte_gesamtgebühr)
             else:
-                semestercontainer.write(
-                    f"Semestergebühren: {geschätzte_gesamtgebühr:,.2f} € "
-                    "(durch Anrechnungen (teilweise) gedeckt)"
-                )
+                hinweis = "durch Anrechnungen (teilweise) gedeckt"
                 basiskosten_semester = geschätzte_gesamtgebühr
                 geschätzte_gesamtgebühr = 0
-                # semestercontainer.write(geschätzte_gesamtgebühr)
         else:
-            semestercontainer.write(
-                "rabattierte Semestergebühren: 0.00 € (durch Anrechnungen vollständig gedeckt)"
-            )
+            hinweis = "durch Anrechnungen vollständig gedeckt"
             basiskosten_semester = 0.0
-            semestercontainer.write(geschätzte_gesamtgebühr)
-    else:
-        semestercontainer.write(f"Semestergebühren: {basiskosten_semester:,.2f} €")
-
+    semester_rows.append(
+        {
+            "Semester": semester,
+            "Semestergebühren (€)": basiskosten_semester,
+            "Langzeitkosten (€)": langzeitkosten_semester,
+        }
+    )
+    langzeitkosten_gesamt += langzeitkosten_semester
     GESAMTKOSTEN += basiskosten_semester + langzeitkosten_semester
+
+semester_df = pd.DataFrame(semester_rows)
+st.dataframe(
+    semester_df,
+    use_container_width=True,
+    hide_index=True,
+    column_config={
+        "Semestergebühren (€)": st.column_config.NumberColumn(format="%.2f €"),
+        "Langzeitkosten (€)": st.column_config.NumberColumn(format="%.2f €"),
+    },
+)
 
 container_gesamtkosten = st.container(border=True)
 
 container_gesamtkosten.write(f"➕ Einmalige Anmeldegebühr: {anmeldegebühr:,.2f} €")
-if langzeitkosten_semester > 0:
-    container_gesamtkosten.write(f"➕  Langzeitkosten: {semester-4} * {langzeitkosten_semester:,.2f} €")
 container_gesamtkosten.write(
     f"➕ Verfasste Studierenschaft- und Studierendenwerksbeiträge (60 € pro Semester): {anzahl_semester_cas * 60:,.2f} €"
 )
