@@ -13,7 +13,7 @@ def nackte_semesterkosten(semester, studiengang) -> float:
         return basiskosten_für_semester, 0.0
     else:
         langzeitkosten = studiengang["Langzeitgebühr"]
-        return basiskosten_für_semester, langzeitkosten
+        return 0.0, langzeitkosten
 
 
 if __name__ == "__main__":

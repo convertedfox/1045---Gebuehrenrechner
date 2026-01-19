@@ -201,7 +201,7 @@ container_gesamtkosten = st.container(border=True)
 
 container_gesamtkosten.write(f"➕ Einmalige Anmeldegebühr: {anmeldegebühr:,.2f} €")
 if langzeitkosten_semester > 0:
-    container_gesamtkosten.write(f"➕ Langzeitkosten: {langzeitkosten_semester:,.2f} €")
+    container_gesamtkosten.write(f"➕  Langzeitkosten: {semester-4} * {langzeitkosten_semester:,.2f} €")
 container_gesamtkosten.write(
     f"➕ Verfasste Studierenschaft- und Studierendenwerksbeiträge (60 € pro Semester): {anzahl_semester_cas * 60:,.2f} €"
 )
