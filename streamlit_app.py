@@ -207,7 +207,7 @@ container_gesamtkosten = st.container(border=True)
 
 container_gesamtkosten.write(f"➕ Einmalige Anmeldegebühr: {anmeldegebühr:,.2f} €")
 container_gesamtkosten.write(
-    f"➕ Verfasste Studierenschaft- und Studierendenwerksbeiträge (60 € pro Semester): {anzahl_semester_cas * 64:,.2f} €"
+    f"➕ Verfasste Studierenschaft- und Studierendenwerksbeiträge (64 € pro Semester): {anzahl_semester_cas * 64:,.2f} €"
 )
 container_gesamtkosten.markdown("---")
 container_gesamtkosten.markdown(f"##### 🟰 Gesamtkosten: {GESAMTKOSTEN:,.2f} €")
