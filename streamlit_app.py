@@ -38,7 +38,7 @@ data = load_data()
 flag_rabatt = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
 
 # Title
-st.title("Gebührenkostenrechner 💰")
+st.title("Gebührenrechner 💰")
 # st.write("Prototyp, ist in Entwicklung...")
 
 # Stammdaten
@@ -199,7 +199,7 @@ st.dataframe(
     hide_index=True,
     column_config={
         "Semestergebühren (€)": st.column_config.NumberColumn(format="%.2f €"),
-        "Langzeitkosten (€)": st.column_config.NumberColumn(format="%.2f €"),
+        "Langzeitgebühren (€)": st.column_config.NumberColumn(format="%.2f €"),
     },
 )
 
