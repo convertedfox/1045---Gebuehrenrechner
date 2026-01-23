@@ -5,6 +5,11 @@ import json
 import pandas as pd
 from kosten import nackte_semesterkosten
 
+## Gebührensatzung ausblenden für externe Nutzung
+## Wording anpassen
+## Langzeitgebühren in Spalte 2 einrechnen
+## Alphabetische Sortierung der Studiengänge
+## für intern: Kommentarspalte mit Infos einbauen, zb. bei Nacherhebung bei kürzerem Studium
 
 # Load data
 @st.cache_data
@@ -15,7 +20,6 @@ def load_data() -> dict:
     with open("studiengänge.json", "r", encoding="utf-8") as file:
         data = json.load(file)
     return data
-
 
 @st.cache_data
 def load_studiengänge(data, gebührensatzung):
