@@ -39,7 +39,6 @@ flag_rabatt = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
 
 # Title
 st.title("Gebührenrechner 💰")
-# st.write("Prototyp, ist in Entwicklung...")
 
 # Stammdaten
 tab_studiengang, tab_gebühren = st.tabs(["Studiengang", "Gebührensatzung"])
@@ -75,8 +74,8 @@ with tab_studiengang:
 
     geschätzte_gesamtgebühr = studiengang_data.get("Studiengebühren") * 4  # Initialwert
 
-    # st.write("Diese Daten liegen vor - nur zur Demo:")
-    # st.write(studiengang_data)
+    st.write("Diese Daten liegen vor - nur zur Demo:")
+    st.write(studiengang_data)
 
     fachbereich = studiengang_data.get("Fachbereich") if studiengang_data else None
 
