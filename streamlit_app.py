@@ -211,3 +211,5 @@ container_gesamtkosten.write(
 )
 container_gesamtkosten.markdown("---")
 container_gesamtkosten.markdown(f"##### 🟰 Gesamtkosten: {GESAMTKOSTEN:,.2f} €")
+
+st.write("DISCLAIMER: Dies ist ein Prototyp und die Berechnungen sind ohne Gewähr. Für verbindliche Auskünfte wenden Sie sich bitte an das Studiengangsmanagement.")
