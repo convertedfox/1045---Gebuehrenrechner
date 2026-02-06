@@ -74,13 +74,14 @@ data: DataType = load_data()
 flag_rabatt: bool = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
 st.set_page_config(
     page_title="Gebührenrechner",
+    page_icon=":material/payments:",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
 # -----------------------------
 # App
 # -----------------------------
-st.title("Gebührenrechner 💰")
+st.markdown("# :material/payments: Gebührenrechner")
 with st.sidebar:
     modus = st.selectbox(
         "Modus",
@@ -97,7 +98,7 @@ with st.sidebar:
 # Stammdaten
 
 # In welchem Studiengang wird absolviert?
-st.write("## In welchem Studiengang wird absolviert? 👨🏻‍🎓")
+st.header("In welchem Studiengang wird absolviert?")
 abs_studiengang: str = st.selectbox(
     "Worin will man absolvieren?",
     load_studiengänge(data, gebührensatzung),
@@ -121,7 +122,7 @@ if studiengang_data is None:
 # Initialwert
 geschätzte_gesamtgebühr: float = float(studiengang_data.get("Studiengebühren", 0.0)) * 4
 
-st.write("Diese Daten liegen vor - nur zur Demo:")
+st.caption("Diese Daten liegen vor (nur zur Demo):")
 st.write(studiengang_data)
 
 fachbereich: str | None = studiengang_data.get("Fachbereich")
@@ -134,10 +135,10 @@ anzahl_semester_cas: int = st.number_input(
     value=4,
 )
 
-st.write("---")
+st.write("")
 
 # Hat man vorher etwas anderes gemacht?
-st.write("## Anrechnung externer Leistungen 🏫")
+st.header("Anrechnung externer Leistungen")
 if fachbereich in {"Sozialwesen", "Gesundheit"}:
     st.write(
         "Bei Studiengängen im Fachbereich Sozialwesen/Gesundheit können keine Gebühren von externen Leistungen erstattet werden."
@@ -172,7 +173,7 @@ else:
             st.write("Es werden keine Gebühren reduziert.")
             rabatt = 0.0
 
-st.write("## Anrechnung von Zeit am CAS 🕕")
+st.header("Anrechnung von Zeit am CAS")
 v2: str = st.radio(
     "Wurde vorher schon etwas am CAS erbracht, was angerechnet werden kann (wie Semester in anderen Studiengängen oder Zertifikate?)",
     ("Ja", "Nein"),
@@ -199,7 +200,7 @@ if v2 == "Ja":
         flag_rabatt = True
 
 # Welche Kosten sind damit verbunden?
-st.write("## Kosten 💲")
+st.header("Kosten")
 st.write(
     'Aktuell werden nur die reinen "Studien-Gebühren" berechnet, keine weiteren Kosten (wie Modulgebühren, etc.)'
 )
@@ -291,9 +292,9 @@ container_gesamtkosten.write(f"➕ Einmalige Anmeldegebühr: {anmeldegebühr:,.2
 container_gesamtkosten.write(
     f"➕ Verfasste Studierenschaft- und Studierendenwerksbeiträge (64 € pro Semester): {anzahl_semester_cas * 64:,.2f} €"
 )
-container_gesamtkosten.markdown("---")
+container_gesamtkosten.write("")
 container_gesamtkosten.markdown(f"##### 🟰 Gesamtkosten: {GESAMTKOSTEN:,.2f} €")
 
-st.write(
+st.caption(
     "DISCLAIMER: Dies ist ein Prototyp und die Berechnungen sind ohne Gewähr. Für verbindliche Auskünfte wenden Sie sich bitte an das Studiengangsmanagement."
 )
