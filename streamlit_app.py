@@ -12,7 +12,7 @@ from kosten import nackte_semesterkosten
 ## Wording anpassen
 ## ERLEDIGT - Langzeitgebühren in Spalte 2 einrechnen
 ## ERLEDIGT - Alphabetische Sortierung der Studiengänge
-## ERLEDIGT für intern: Kommentarspalte mit Infos einbauen, zb. bei Nacherhebung bei kürzerem Studium
+## ERLEDIGT für intern: Kommentarspalte mit Infos einbauen, zb. bei Nacherhebung bei kürzerem Studium.
 
 
 # -----------------------------
@@ -67,14 +67,19 @@ def load_gebührensatzung(data: DataType) -> List[str]:
     Vorher muss load_data() aufgerufen werden, um die Daten zu laden, damit diese Funktion darauf zugreifen kann.
     """
     return list(data.keys())
-
-
 # -----------------------------
-# App
+# wichtige Parameter und Flags
 # -----------------------------
 data: DataType = load_data()
 flag_rabatt: bool = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
-
+st.set_page_config(
+    page_title="Gebührenrechner",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
+# -----------------------------
+# App
+# -----------------------------
 st.title("Gebührenrechner 💰")
 with st.sidebar:
     modus = st.selectbox(
