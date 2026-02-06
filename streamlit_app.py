@@ -10,7 +10,7 @@ from kosten import nackte_semesterkosten
 ## Gebührensatzung ausblenden für externe Nutzung
 ## Wording anpassen
 ## ERLEDIGT - Langzeitgebühren in Spalte 2 einrechnen
-## Alphabetische Sortierung der Studiengänge
+## ERLEDIGT - Alphabetische Sortierung der Studiengänge
 ## für intern: Kommentarspalte mit Infos einbauen, zb. bei Nacherhebung bei kürzerem Studium
 
 
@@ -75,13 +75,12 @@ data: DataType = load_data()
 flag_rabatt: bool = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
 
 st.title("Gebührenrechner 💰")
-
-# Stammdaten
-tab_studiengang, tab_gebühren = st.tabs(["Studiengang", "Gebührensatzung"])
-
-# Gebührensatzung
-with tab_gebühren:
-    # st.write("Aktuell werden DBs nur bei Gebührensatzung ab 01.04.2026 unterstützt.")
+with st.sidebar:
+    modus = st.selectbox(
+        "Modus",
+        ("extern", "intern"),
+        index=0,
+    )
     gebührensatzung: str = st.selectbox(
         "Welche Gebührensatzung soll verwendet werden?",
         load_gebührensatzung(data),
@@ -89,44 +88,45 @@ with tab_gebühren:
         disabled=True,
     )
 
+# Stammdaten
+
 # In welchem Studiengang wird absolviert?
-with tab_studiengang:
-    st.write("## In welchem Studiengang wird absolviert? 👨🏻‍🎓")
-    abs_studiengang: str = st.selectbox(
-        "Worin will man absolvieren?",
-        load_studiengänge(data, gebührensatzung),
-        index=0,
-    )
+st.write("## In welchem Studiengang wird absolviert? 👨🏻‍🎓")
+abs_studiengang: str = st.selectbox(
+    "Worin will man absolvieren?",
+    load_studiengänge(data, gebührensatzung),
+    index=0,
+)
 
-    # Studiengang-Daten gleich abspeichern
-    studiengang_data: StudiengangEintrag | None = next(
-        (
-            eintrag
-            for eintrag in data[gebührensatzung]
-            if eintrag.get("Studiengang") == abs_studiengang
-        ),
-        None,
-    )
+# Studiengang-Daten gleich abspeichern
+studiengang_data: StudiengangEintrag | None = next(
+    (
+        eintrag
+        for eintrag in data[gebührensatzung]
+        if eintrag.get("Studiengang") == abs_studiengang
+    ),
+    None,
+)
 
-    if studiengang_data is None:
-        st.error("Für den ausgewählten Studiengang wurden keine Stammdaten gefunden.")
-        st.stop()
+if studiengang_data is None:
+    st.error("Für den ausgewählten Studiengang wurden keine Stammdaten gefunden.")
+    st.stop()
 
-    # Initialwert
-    geschätzte_gesamtgebühr: float = float(studiengang_data.get("Studiengebühren", 0.0)) * 4
+# Initialwert
+geschätzte_gesamtgebühr: float = float(studiengang_data.get("Studiengebühren", 0.0)) * 4
 
-    st.write("Diese Daten liegen vor - nur zur Demo:")
-    st.write(studiengang_data)
+st.write("Diese Daten liegen vor - nur zur Demo:")
+st.write(studiengang_data)
 
-    fachbereich: str | None = studiengang_data.get("Fachbereich")
+fachbereich: str | None = studiengang_data.get("Fachbereich")
 
-    # Wieviele Semester werden am CAS studiert?
-    anzahl_semester_cas: int = st.number_input(
-        f"Anzahl durchlaufener Semester am CAS im Studiengang {abs_studiengang}",
-        min_value=4,
-        max_value=10,
-        value=4,
-    )
+# Wieviele Semester werden am CAS studiert?
+anzahl_semester_cas: int = st.number_input(
+    f"Anzahl durchlaufener Semester am CAS im Studiengang {abs_studiengang}",
+    min_value=4,
+    max_value=10,
+    value=4,
+)
 
 st.write("---")
 
