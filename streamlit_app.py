@@ -8,6 +8,13 @@ import streamlit as st
 
 from kosten import nackte_semesterkosten
 
+st.set_page_config(
+    page_title="Gebührenrechner",
+    page_icon=":material/payments:",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+)
+
 ## Gebührensatzung ausblenden für externe Nutzung
 ## Wording anpassen
 ## ERLEDIGT - Langzeitgebühren in Spalte 2 einrechnen
@@ -72,12 +79,6 @@ def load_gebührensatzung(data: DataType) -> List[str]:
 # -----------------------------
 data: DataType = load_data()
 flag_rabatt: bool = False  # Flag, ob Rabatt durch externe ECTS gewährt wurde
-st.set_page_config(
-    page_title="Gebührenrechner",
-    page_icon=":material/payments:",
-    layout="wide",
-    initial_sidebar_state="collapsed",
-)
 # -----------------------------
 # App
 # -----------------------------
