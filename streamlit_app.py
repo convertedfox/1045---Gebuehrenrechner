@@ -1,6 +1,7 @@
 # Korrigierter Streamlit Code
 import json
-from typing import Any, Dict, List, TypedDict
+from multiprocessing import Manager
+from typing import Any, Dict, List, TypedDict, Mapping
 
 import pandas as pd
 import streamlit as st
@@ -11,7 +12,7 @@ from kosten import nackte_semesterkosten
 ## Wording anpassen
 ## ERLEDIGT - Langzeitgebühren in Spalte 2 einrechnen
 ## ERLEDIGT - Alphabetische Sortierung der Studiengänge
-## für intern: Kommentarspalte mit Infos einbauen, zb. bei Nacherhebung bei kürzerem Studium
+## ERLEDIGT für intern: Kommentarspalte mit Infos einbauen, zb. bei Nacherhebung bei kürzerem Studium
 
 
 # -----------------------------
@@ -207,7 +208,9 @@ anmeldegebühr: float = float(studiengang_data.get("Anmeldegebühr", 0.0))
 GESAMTKOSTEN: float = 0.0 + anmeldegebühr + anzahl_semester_cas * 60.0
 # Warum die 60? Weil studentische Beiträge 60 euro pro semester sind
 
-# Semestertabelle erzeugen
+#-----------------------------
+#  Semestertabelle erzeugen
+# -----------------------------
 semester_rows: List[Dict[str, Any]] = []
 semester: int = 0
 langzeitkosten_gesamt: float = 0.0
@@ -234,31 +237,49 @@ for _ in range(anzahl_semester_cas):
         else:
             hinweis = "durch Anrechnungen vollständig gedeckt"
             basiskosten_semester = 0.0
-
-    semester_rows.append(
-        {
-            "Semester": semester,
-            "Semestergebühren (€)": basiskosten_semester,
-            "Langzeitkosten (€)": langzeitkosten_semester,
-            # "Hinweis": hinweis,  # optional: falls du die Spalte anzeigen willst
-        }
-    )
+    # Reihe basteln, die hinzugefügt wird       
+    row = {
+        "Semester": semester,
+        "Semestergebühren (€)": basiskosten_semester,
+        "Langzeitkosten (€)": langzeitkosten_semester,
+    }
+    if modus == "intern":
+        row["Hinweis"] = hinweis
+    
+    semester_rows.append(row)
 
     langzeitkosten_gesamt += langzeitkosten_semester
     GESAMTKOSTEN += basiskosten_semester + langzeitkosten_semester
 
+
 semester_df: pd.DataFrame = pd.DataFrame(semester_rows)
 
+# Tabellenkonfiguration für interne und externe Nutzer
+column_config_intern: Mapping[str, st.column_config.Column] = {
+    "Semestergebühren (€)": st.column_config.NumberColumn(format="%.2f €"),
+    "Langzeitkosten (€)": st.column_config.NumberColumn(format="%.2f €"),
+    "Hinweis": st.column_config.TextColumn(),
+}
+
+column_config_extern: Mapping[str, st.column_config.Column] = {
+    "Semestergebühren (€)": st.column_config.NumberColumn(format="%.2f €"),
+    "Langzeitkosten (€)": st.column_config.NumberColumn(format="%.2f €"),
+}
+
+column_config: Mapping[str, st.column_config.Column] = (
+    column_config_intern if modus == "intern" else column_config_extern
+)
+# Tabelle anzeigen
 st.dataframe(
     semester_df,
     use_container_width=True,
     hide_index=True,
-    column_config={
-        "Semestergebühren (€)": st.column_config.NumberColumn(format="%.2f €"),
-        "Langzeitkosten (€)": st.column_config.NumberColumn(format="%.2f €"),
-        # "Hinweis": st.column_config.TextColumn(),
-    },
+    column_config=column_config,
 )
+
+# -----------------------------
+# Container für Gesamtkosten
+# -----------------------------
 
 container_gesamtkosten = st.container(border=True)
 container_gesamtkosten.write(f"➕ Einmalige Anmeldegebühr: {anmeldegebühr:,.2f} €")
